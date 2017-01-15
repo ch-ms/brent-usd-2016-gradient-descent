@@ -3,7 +3,7 @@
 
 isNormalize = true;
 isQuadratic = false;
-calcCost = false; %isNormalize;
+calcCost = false; % isNormalize;
 
 % READ
 data = readCSV("./brent_usd.csv");
@@ -109,7 +109,7 @@ if (!isQuadratic)
 
   figure;
   surf(theta0_vals, theta1_vals, J_vals);
-  xlabel('\theta_0'); ylabel('\theta_1');
+  xlabel('\theta_0'); ylabel('\theta_1'); zlabel('Cost');
   anykey();
 
 end
